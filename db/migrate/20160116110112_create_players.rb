@@ -7,6 +7,7 @@ class CreatePlayers < ActiveRecord::Migration
       t.string :login_pass
       t.string :description
       t.integer :type_id
+      t.integer :rate
 
       t.timestamps null: false
     end

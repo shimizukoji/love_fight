@@ -4,7 +4,9 @@ class PlayersController < ApplicationController
   # GET /players
   # GET /players.json
   def index
-    @players = Player.all
+    @players = Player.where(type_id:1)
+    @players2 = Player.where(type_id:2)
+    @players3 = Player.where(type_id:3)    
   end
 
   # GET /players/1
